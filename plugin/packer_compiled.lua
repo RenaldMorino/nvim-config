@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  everforest = {
+    loaded = true,
+    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
