@@ -1,11 +1,11 @@
-function setNordicTheme()
+function SetNordicTheme()
 	vim.cmd.colorscheme('nordic');
 end
 
-function setRosePine()
+function SetRosePine()
 	vim.cmd.colorscheme('rose-pine');
 end
 
-function setEverforest()
+function SetEverforest()
 	vim.cmd.colorscheme('everforest');
 end

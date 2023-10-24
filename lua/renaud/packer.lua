@@ -6,24 +6,24 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.4',
   -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 'AlexvZyl/nordic.nvim', 
-  as = 'nordic',
-  config = function()
-	  vim.cmd('colorscheme nordic')
-  end})
+  use({ 'AlexvZyl/nordic.nvim',
+  as = 'nordic' })
 
   use({ 'rose-pine/neovim',
   as = 'rose-pine',})
 
   use({'sainnhe/everforest',
-  as = 'everforest'})
+  as = 'everforest',
+  config = function()
+	  vim.cmd('colorscheme everforest')
+  end})
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -32,6 +32,8 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
 
   use('tpope/vim-fugitive')
+
+  use( 'github/copilot.vim')
 
   use {
   'VonHeikemen/lsp-zero.nvim',
@@ -49,4 +51,5 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},
   }
 }
+
 end)
