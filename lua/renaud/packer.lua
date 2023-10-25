@@ -13,6 +13,8 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use ('sbdchd/neoformat')
+
   use({ 'AlexvZyl/nordic.nvim',
   as = 'nordic' })
 
@@ -34,6 +36,8 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
 
   use( 'github/copilot.vim')
+
+  use ('andweeb/presence.nvim')
 
   use {
   'VonHeikemen/lsp-zero.nvim',
