@@ -22,9 +22,12 @@ return require('packer').startup(function(use)
   as = 'rose-pine',})
 
   use({'sainnhe/everforest',
-  as = 'everforest',
+  as = 'everforest'})
+
+  use ({ 'sainnhe/sonokai',
+  as = 'sonokai',
   config = function()
-	  vim.cmd('colorscheme everforest')
+	  vim.cmd('colorscheme sonokai')
   end})
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})

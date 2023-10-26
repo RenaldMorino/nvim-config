@@ -9,3 +9,8 @@ end
 function SetEverforest()
 	vim.cmd.colorscheme('everforest');
 end
+
+function SetSonokai()
+	vim.cmd.colorscheme('sonokai');
+end
+
