@@ -68,4 +68,6 @@ use 'javiorfo/nvim-nyctophilia'
 
 use 'wfxr/minimap.vim'
 
+use "lukas-reineke/indent-blankline.nvim"
+
 end)
