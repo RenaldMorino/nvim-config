@@ -1,4 +1,4 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
+
 
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
@@ -69,5 +69,30 @@ use 'javiorfo/nvim-nyctophilia'
 use 'wfxr/minimap.vim'
 
 use "lukas-reineke/indent-blankline.nvim"
+
+use ({'preservim/nerdcommenter'})
+
+use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
+-- Lua
+use {
+  "folke/which-key.nvim",
+  config = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 300
+    require("which-key").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
+
+use 'previm/previm'
+--use 'weirongxu/plantuml-previewer.vim'
+--
+use 'tyru/open-browser.vim'
+--
+--use 'aklt/plantuml-syntax'
 
 end)

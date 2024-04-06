@@ -141,6 +141,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoterm",
     url = "https://github.com/kassio/neoterm"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdcommenter",
+    url = "https://github.com/preservim/nerdcommenter"
+  },
   nordic = {
     loaded = true,
     path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nordic",
@@ -166,6 +171,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
+  ["open-browser.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\open-browser.vim",
+    url = "https://github.com/tyru/open-browser.vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -180,6 +195,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
+  },
+  previm = {
+    loaded = true,
+    path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\previm",
+    url = "https://github.com/previm/previm"
+  },
+  ["promise-async"] = {
+    loaded = true,
+    path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
   },
   ["rose-pine"] = {
     loaded = true,
@@ -206,6 +231,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["which-key.nvim"] = {
+    config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\RenaudMorin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
@@ -214,6 +245,10 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
 -- Config for: sonokai
 time([[Config for sonokai]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme sonokai\bcmd\bvim\0", "config", "sonokai")

@@ -17,7 +17,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'jdtls', 'bashls', 'clangd', 'cmake', 'cssls', 'eslint', 'emmet_ls', 'html', 'jsonls', 'ltex', 'lua_ls', 'marksman', 'jedi_language_server', 'stylelint_lsp', 'tailwindcss', 'yamlls', 'tsserver', 'rust_analyzer'},
+  ensure_installed = {'jdtls', 'bashls', 'clangd', 'cssls', 'eslint', 'emmet_ls', 'html', 'jsonls', 'ltex', 'lua_ls', 'marksman', 'stylelint_lsp', 'tailwindcss', 'yamlls', 'tsserver', 'rust_analyzer'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()

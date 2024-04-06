@@ -1,0 +1,1 @@
+--local g:previm_open_cmd = 'open -a Chrome'
