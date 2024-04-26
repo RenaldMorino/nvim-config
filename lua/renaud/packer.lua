@@ -64,7 +64,7 @@ use 'kassio/neoterm'
 -- Optional for puml syntax highlighting:
 use 'javiorfo/nvim-nyctophilia'
 
-use 'wfxr/minimap.vim'
+use {'wfxr/minimap.vim', as = 'minimap'}
 
 use "lukas-reineke/indent-blankline.nvim"
 
