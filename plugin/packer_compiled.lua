@@ -126,11 +126,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["minimap.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\minimap.vim",
-    url = "https://github.com/wfxr/minimap.vim"
-  },
   neoformat = {
     loaded = true,
     path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoformat",
