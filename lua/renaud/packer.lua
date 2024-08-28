@@ -57,38 +57,35 @@ return require('packer').startup(function(use)
   }
 }
 
-use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, }) 
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
-use 'kassio/neoterm'
+  use 'kassio/neoterm'
 
--- Optional for puml syntax highlighting:
-use 'javiorfo/nvim-nyctophilia'
+  -- Optional for puml syntax highlighting:
+  use 'javiorfo/nvim-nyctophilia'
 
-use "lukas-reineke/indent-blankline.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
-use ({'preservim/nerdcommenter'})
+  use ({'preservim/nerdcommenter'})
 
-use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
--- Lua
-use {
-  "folke/which-key.nvim",
-  config = function()
-    vim.o.timeout = true
-    vim.o.timeoutlen = 300
-    require("which-key").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  end
-}
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      vim.o.timeout = true
+      vim.o.timeoutlen = 300
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
 
-use 'previm/previm'
---use 'weirongxu/plantuml-previewer.vim'
---
-use 'tyru/open-browser.vim'
---
---use 'aklt/plantuml-syntax'
-
+  use 'echasnovski/mini.icons'
+  use 'nvim-tree/nvim-web-devicons'
+  
+  use 'previm/previm'
+  use 'tyru/open-browser.vim'
 end)

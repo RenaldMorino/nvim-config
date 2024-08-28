@@ -1,3 +1,6 @@
+local wk = require("which-key")
+local ufo = require("ufo")
+
 vim.o.foldcolumn = '1' -- '0' is not bad
 vim.o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 vim.o.foldlevelstart = 99
@@ -6,6 +9,11 @@ vim.o.foldenable = true
 -- Using ufo provider need remap `zR` and `zM`. If Neovim is 0.6.1, remap yourself
 vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
 vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
+
+wk.add({
+    { 'zR', ufo.openAllFolds, desc = 'Open all folds' },
+    { 'zM', ufo.closeAllFolds, desc = 'Close all folds' },
+})
 
 -- Option 1: coc.nvim as LSP client
 --use {'neoclide/coc.nvim', branch = 'master', run = 'yarn install --frozen-lockfile'}

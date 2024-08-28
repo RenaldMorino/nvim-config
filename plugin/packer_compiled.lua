@@ -126,6 +126,11 @@ _G.packer_plugins = {
     path = "/home/renaud/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.icons"] = {
+    loaded = true,
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/mini.icons",
+    url = "https://github.com/echasnovski/mini.icons"
+  },
   neoformat = {
     loaded = true,
     path = "/home/renaud/.local/share/nvim/site/pack/packer/start/neoformat",
@@ -170,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-ufo",
     url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["open-browser.vim"] = {
     loaded = true,
