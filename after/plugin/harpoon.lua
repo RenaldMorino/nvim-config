@@ -2,6 +2,12 @@ local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 local wk = require("which-key")
 
+vim.cmd("highlight! HarpoonInactive guibg=NONE guifg=#6e6a86")
+vim.cmd("highlight! HarpoonActive guibg=#232136 guifg=#e0def4")
+vim.cmd("highlight! HarpoonNumberActive guibg=NONE guifg=#9ccfd8")
+vim.cmd("highlight! HarpoonNumberInactive guibg=NONE guifg=#286983")
+vim.cmd("highlight! TabLineFill guibg=NONE guifg=white")
+
 wk.add({
   { "<C-e>", ui.toggle_quick_menu, desc = "Toggle Harpoon menu" },
   { "<leader>a", mark.add_file, desc = "Add file to harpoon" },
@@ -20,12 +26,6 @@ wk.add({
   { "<leader>9", function() ui.nav_file(9) end, desc = "Navigate to harpoon file 9" },
   { "<leader>0", function() ui.nav_file(0) end, desc = "Navigate to harpoon file 0" },
 })
-
-vim.cmd("highlight! HarpoonInactive guibg=NONE guifg=#6e6a86")
-vim.cmd("highlight! HarpoonActive guibg=#232136 guifg=#e0def4")
-vim.cmd("highlight! HarpoonNumberActive guibg=NONE guifg=#9ccfd8")
-vim.cmd("highlight! HarpoonNumberInactive guibg=NONE guifg=#286983")
-vim.cmd("highlight! TabLineFill guibg=NONE guifg=white")
 
 require("harpoon").setup({
     tabline= true,
