@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\renau\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\share\\lua\\5.1\\?.lua;C:\\Users\\renau\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\renau\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\renau\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\renau\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696883897\\lib\\lua\\5.1\\?.so"
+local package_path_str = "/home/renaud/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?.lua;/home/renaud/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?/init.lua;/home/renaud/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?.lua;/home/renaud/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/renaud/.cache/nvim/packer_hererocks/2.1.1720049189/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,161 +76,161 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["copilot.vim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   everforest = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
   harpoon = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\markdown-preview.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   neoformat = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoformat",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
   neoterm = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neoterm",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/neoterm",
     url = "https://github.com/kassio/neoterm"
   },
   nerdcommenter = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdcommenter",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nerdcommenter",
     url = "https://github.com/preservim/nerdcommenter"
   },
   nordic = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nordic",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nordic",
     url = "https://github.com/AlexvZyl/nordic.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-nyctophilia"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-nyctophilia",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-nyctophilia",
     url = "https://github.com/javiorfo/nvim-nyctophilia"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ufo"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ufo",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/nvim-ufo",
     url = "https://github.com/kevinhwang91/nvim-ufo"
   },
   ["open-browser.vim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\open-browser.vim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/open-browser.vim",
     url = "https://github.com/tyru/open-browser.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["presence.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
   },
   previm = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\previm",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/previm",
     url = "https://github.com/previm/previm"
   },
   ["promise-async"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\promise-async",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/promise-async",
     url = "https://github.com/kevinhwang91/promise-async"
   },
   ["rose-pine"] = {
     config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rose-pine",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
   sonokai = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\sonokai",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/sonokai",
     url = "https://github.com/sainnhe/sonokai"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
     loaded = true,
-    path = "C:\\Users\\renau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\which-key.nvim",
+    path = "/home/renaud/.local/share/nvim/site/pack/packer/start/which-key.nvim",
     url = "https://github.com/folke/which-key.nvim"
   }
 }
@@ -240,14 +240,14 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
+-- Config for: rose-pine
+time([[Config for rose-pine]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+time([[Config for rose-pine]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
