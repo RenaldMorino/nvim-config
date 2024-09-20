@@ -1,4 +1,5 @@
 -- Only required if you have packer configured as `opt`
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -85,7 +86,11 @@ return require('packer').startup(function(use)
 
   use 'echasnovski/mini.icons'
   use 'nvim-tree/nvim-web-devicons'
+
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end}
   
-  use 'previm/previm'
-  use 'tyru/open-browser.vim'
+  use 'Civitasv/cmake-tools.nvim'
+
 end)
