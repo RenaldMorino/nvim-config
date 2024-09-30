@@ -93,4 +93,6 @@ return require('packer').startup(function(use)
   
   use 'Civitasv/cmake-tools.nvim'
 
+  use ('turbio/bracey.vim', { run = 'cd /home/renaud/.local/share/nvim/site/pack/packer/start/bracey.vim && npm install --prefix server' })
+
 end)
