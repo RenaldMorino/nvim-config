@@ -90,9 +90,18 @@ return require('packer').startup(function(use)
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
   end}
-  
+
   use 'Civitasv/cmake-tools.nvim'
 
   use ('turbio/bracey.vim', { run = 'cd /home/renaud/.local/share/nvim/site/pack/packer/start/bracey.vim && npm install --prefix server' })
+
+  use {
+    'rmagatti/auto-session',
+    config = function()
+      require("auto-session").setup {
+        suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+      }
+    end
+  }
 
 end)
