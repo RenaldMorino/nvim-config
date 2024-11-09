@@ -37,9 +37,13 @@ require('mason-lspconfig').setup({
     lua_ls = function()
       local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
+    end,
+    function (glslls)
+      require('lspconfig').glslls.setup(glslls)
     end
   }
 })
+--require("lspconfig").glslls.setup({})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -55,6 +59,5 @@ cmp.setup({
 		['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
 		['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
 		['<C-Space>'] = cmp.mapping.confirm({ select = true }),
-		--['<C-Space>'] = cmp.mapping.complete(),
 	}),
 })
