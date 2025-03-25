@@ -29,7 +29,12 @@ lsp_zero.on_attach(function(client, bufnr)
   })
 end)
 
-require('mason').setup({})
+require('mason').setup({
+  registries = {
+    'github:mason-org/mason-registry',
+    'github:crashdummyy/mason-registry',
+  },
+})
 require('mason-lspconfig').setup({
   ensure_installed = {'jdtls', 'bashls', 'clangd', 'cssls', 'eslint', 'emmet_ls', 'html', 'jsonls', 'ltex', 'lua_ls', 'marksman', 'stylelint_lsp', 'tailwindcss', 'ts_ls', 'yamlls', 'rust_analyzer'},
   handlers = {
