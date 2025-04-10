@@ -85,7 +85,12 @@ return require('packer').startup(function(use)
   }
 
   use 'echasnovski/mini.icons'
-  use 'nvim-tree/nvim-web-devicons'
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+}
 
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
     require("toggleterm").setup()
