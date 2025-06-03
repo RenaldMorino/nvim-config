@@ -36,7 +36,6 @@ require('mason').setup({
   },
 })
 require('mason-lspconfig').setup({
-  automatic_enable = false,
   ensure_installed = {'jdtls', 'bashls', 'clangd', 'cssls', 'eslint', 'emmet_ls', 'html', 'jsonls', 'ltex', 'lua_ls', 'marksman', 'stylelint_lsp', 'tailwindcss', 'ts_ls', 'yamlls', 'rust_analyzer'},
   handlers = {
     lsp_zero.default_setup,
