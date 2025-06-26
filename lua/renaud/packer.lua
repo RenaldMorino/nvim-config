@@ -106,4 +106,6 @@ return require('packer').startup(function(use)
 
   use 'javiorfo/nvim-soil'
 
+  use "frabjous/knap"
+
 end)
