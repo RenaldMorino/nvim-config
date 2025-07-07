@@ -18,16 +18,16 @@ return require('packer').startup(function(use)
   as = 'nordic' })
 
   use({ 'rose-pine/neovim',
-  as = 'rose-pine',
-  config = function()
-    vim.cmd('colorscheme rose-pine')
-  end})
+  as = 'rose-pine' })
 
   use({'sainnhe/everforest',
   as = 'everforest'})
 
   use ({ 'sainnhe/sonokai',
-  as = 'sonokai'})
+  as = 'sonokai',
+  config = function()
+    vim.cmd('colorscheme sonokai')
+  end})
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
