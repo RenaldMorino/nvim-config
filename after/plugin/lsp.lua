@@ -36,7 +36,7 @@ require('mason').setup({
   },
 })
 require('mason-lspconfig').setup({
-  ensure_installed = {'jdtls', 'bashls', 'clangd', 'cssls', 'eslint', 'emmet_ls', 'html', 'jsonls', 'ltex', 'lua_ls', 'marksman', 'stylelint_lsp', 'tailwindcss', 'ts_ls', 'yamlls', 'rust_analyzer'},
+  ensure_installed = {'jdtls', 'bashls', 'clangd', 'cssls', 'emmet_ls', 'html', 'jsonls', 'ltex', 'lua_ls', 'marksman', 'stylelint_lsp', 'tailwindcss', 'ts_ls', 'yamlls', 'rust_analyzer'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
@@ -48,7 +48,6 @@ require('mason-lspconfig').setup({
     end
   }
 })
---require("lspconfig").glslls.setup({})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
